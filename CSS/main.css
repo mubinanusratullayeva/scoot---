@@ -304,6 +304,10 @@ footer {
   flex-direction: default;
 }
 
+svg:hover > path {
+  fill: #E5ECF4;
+}
+
 .section {
   padding-top: 153px;
   display: flex;

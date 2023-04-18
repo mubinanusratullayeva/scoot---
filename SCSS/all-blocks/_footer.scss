@@ -30,3 +30,7 @@ footer {
     column-gap: 24px;
     @include mixins.flexbox(center);
 }
+
+svg:hover > path{
+    fill: #E5ECF4;
+}
