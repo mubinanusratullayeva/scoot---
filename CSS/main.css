@@ -157,4 +157,46 @@ header .hero__description-desc--btn {
   margin-top: 40px;
 }
 
+.cards {
+  display: flex;
+  align-items: default;
+  justify-content: default;
+  flex-direction: default;
+  padding-top: 160px;
+  position: relative;
+  column-gap: 30px;
+}
+.cards__line {
+  top: 195px;
+  position: absolute;
+  left: -222px;
+  z-index: -1;
+  min-width: 990px;
+  border: 15px solid #E5ECF4;
+}
+.cards__item-icon {
+  align-items: center;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: #FCB72B;
+  display: flex;
+  justify-content: center;
+}
+.cards__item-title {
+  padding-bottom: 27px;
+  padding-top: 40px;
+  font-family: "Space Mono";
+  font-size: 24px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+.cards__item-text {
+  width: 350px;
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
 /*# sourceMappingURL=main.css.map */
