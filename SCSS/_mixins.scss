@@ -35,3 +35,43 @@
     border: none;
     cursor: pointer;
 }
+
+
+@mixin anker {
+  font-family: variables.$title-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: variables.$yellow-color;
+}
+
+@mixin title {
+  font-family: variables.$title-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: variables.$title-color;
+}
+
+@mixin pretitle {
+  font-family: variables.$text-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: variables.$text-color;
+}
+@mixin btnhover {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: variables.$yellow-color;
+  background-color: transparent;
+}
