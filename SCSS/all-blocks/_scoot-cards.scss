@@ -1,0 +1,40 @@
+@use '../mixins';
+@use '../variables';
+.cards {
+    @include mixins.flexbox();
+    padding-top: 160px;
+    position: relative;
+    column-gap: 30px;
+    &__line {
+        top: 195px;
+        position: absolute;
+        left: -222px;
+        z-index: -1;
+        min-width: 990px;
+        border: 15px solid #E5ECF4;
+    }
+    &__item-icon {
+        align-items: center;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background: #FCB72B;
+        display: flex;
+        justify-content: center;
+    }
+    &__item-title {
+        padding-bottom: 27px;
+        padding-top: 40px;
+        font-family: 'Space Mono';
+        font-size: 24px;
+        letter-spacing: -1.07143px;
+        color: variables.$title-color;
+    }
+    &__item-text {
+        width: 350px;
+        font-family: 'Lexend Deca';
+        font-size: 15px;
+        line-height: 25px;
+        color: variables.$text-color;
+    }
+}
