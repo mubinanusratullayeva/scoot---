@@ -1,0 +1,37 @@
+@use'./variables';
+
+@mixin flexbox($align:default, $justify:default, $fldirection:default) {
+    display: flex;
+    @if $align {
+        align-items: $align;
+    }
+    @else {
+        align-items: center;
+    }
+    @if $justify {
+        justify-content: $justify;
+    }
+    @else {
+        justify-content: space-between;
+    }
+    @if $fldirection {
+        flex-direction: $fldirection;
+    }
+    @else {
+        flex-direction: column;
+    }
+}
+
+@mixin btn{
+    min-width: 180px;
+    padding: 14px 39px;
+    background-color: variables.$yellow-color;
+    color: variables.$main-color;
+    font-family: variables.$title-font;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
