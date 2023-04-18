@@ -1,0 +1,41 @@
+@use '../variables';
+@use '../mixins';
+.tody {
+    min-height: 300px;
+    background-image: url(../../images/section-bg__img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.display {
+    @include mixins.flexbox(center, space-between);
+    padding-top: 102px;
+}
+
+.value-sign__and {
+    width: 415px;
+    font-family: 'Space Mono';
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #FFFFFF;
+}
+
+.btns {
+    @include mixins.flexbox();
+    column-gap: 18px;
+}
+
+.btns button {
+    cursor: pointer;
+    min-width: 159px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    background-color: #E5ECF4;
+    @include mixins.flexbox(center, space-between);
+    column-gap: 11px;
+    border: none;
+    span {
+        @include mixins.flexbox(flex-start, flex-start, column)
+    }
+}

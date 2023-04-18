@@ -1,0 +1,32 @@
+@use '../mixins';
+@use '../variables';
+footer {
+    padding-top: 35px;
+    padding-bottom: 33px;
+    background-color: #333A44;
+}
+
+.footer-display {
+    @include mixins.flexbox(center, space-between);
+}
+
+.value-ul {
+    column-gap: 32px;
+    @include mixins.flexbox(center);
+}
+
+.value-ul li a {
+    font-family: 'Space Mono';
+    font-size: 15px;
+    color: variables.$text-color;
+}
+
+.about-location {
+    column-gap: 59px;
+    @include mixins.flexbox(center);
+}
+
+.images {
+    column-gap: 24px;
+    @include mixins.flexbox(center);
+}
