@@ -61,5 +61,8 @@ nav {
                 max-width: 100%;
             }
         }
+        &__bug-menu--link:hover{
+            color: variables.$yellow-color ;
+        }
     }
 }
