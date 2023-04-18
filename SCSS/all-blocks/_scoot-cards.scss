@@ -3,6 +3,7 @@
 .cards {
     @include mixins.flexbox();
     padding-top: 160px;
+    padding-bottom: 73px;
     position: relative;
     column-gap: 30px;
     &__line {
