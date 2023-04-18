@@ -1,0 +1,180 @@
+@use "../mixins";
+@use "../fonts";
+@use "../variables";
+
+.section {
+  padding-top: 153px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 2000px;
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: s;
+    max-width: 1106px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  //   ...
+  //   ...
+  //   ...
+  //   ...
+  &__zero {
+    display: flex;
+    height: 30%;
+    width: 100%;
+
+    &--img {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      background-image: url(../images/third.png);
+      background-repeat: no-repeat;
+      background-position: center top;
+      width: 50%;
+      height: 100%;
+    }
+    &--text {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+      width: 50%;
+      height: 100%;
+
+      .ct {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-evenly;
+        width: 71%;
+        height: 70%;
+      }
+    }
+
+    &--title {
+      @include mixins.title();
+      width: 440px;
+    }
+    &--pretitle {
+      @include mixins.pretitle();
+      width: 440px;
+    }
+    &--btn {
+      @include mixins.btn();
+    }
+    &--btn:hover {
+      border: 3px solid variables.$yellow-color;
+      @include mixins.btnhover();
+    }
+  }
+  //   ...
+  //   ...
+  //   ...
+  //   ...
+  &__city {
+    display: flex;
+    height: 30%;
+    width: 100%;
+
+    &--img {
+      background-image: url(../images/second.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 50%;
+      height: 100%;
+    }
+    &--text {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      width: 50%;
+      height: 100%;
+
+      .ct {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        width: 71%;
+        height: 70%;
+      }
+    }
+
+    &--title {
+      @include mixins.title();
+      width: 440px;
+    }
+    &--pretitle {
+      @include mixins.pretitle();
+      width: 440px;
+    }
+    &--btn {
+      @include mixins.btn();
+    }
+    &--btn:hover {
+      border: 3px solid variables.$yellow-color;
+      @include mixins.btnhover();
+    }
+  }
+  //   ...
+  //   ...
+  //   ...
+  //   ...
+  //   ...
+
+  &__easy {
+    display: flex;
+    height: 30%;
+    width: 100%;
+
+    &--img {
+      display: flex;
+      align-items: end;
+      justify-content: end;
+      background-image: url(../images/first.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      width: 50%;
+      height: 100%;
+    }
+    &--text {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+      width: 50%;
+      height: 100%;
+
+      .ct {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-evenly;
+        width: 71%;
+        height: 70%;
+      }
+    }
+
+    &--title {
+      @include mixins.title();
+      width: 440px;
+    }
+    &--pretitle {
+      @include mixins.pretitle();
+      width: 440px;
+    }
+    &--btn {
+      @include mixins.btn();
+    }
+    &--btn:hover {
+      border: 3px solid variables.$yellow-color;
+      @include mixins.btnhover();
+    }
+  }
+}
