@@ -1,0 +1,49 @@
+@use'../mixins';
+@use'../variables';
+
+header{
+    margin-top: 95px;
+    padding-top: 153px;
+    background-image: url(../images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+    .hero{
+        position: relative;
+        @include mixins.flexbox(flex-start, flex-start, column);
+        &__title{
+            max-width: 500px;
+            font-family: variables.$title-font;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 56px;
+            letter-spacing: -2.5px;
+            color: variables.$main-color;
+        }
+        &__description{
+            position: absolute;
+            top: 154px;
+            left: -165px;
+        @include mixins.flexbox(center);
+        column-gap: 40px;
+        &-line{
+            display: inline-block;
+            min-width: 202.5px;
+            border: 15px solid variables.$yellow-color;
+        }
+        &-desc{
+        @include mixins.flexbox(flex-start, flex-start, column);
+        &--text{
+            max-width: 405px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        &--btn{
+        @include mixins.btn();
+        margin-top: 40px;
+        }
+        }
+        }
+    }
+}

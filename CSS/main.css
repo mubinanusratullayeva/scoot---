@@ -91,4 +91,70 @@ nav .navbar__bug-btn:hover {
   max-width: 100%;
 }
 
+header {
+  margin-top: 95px;
+  padding-top: 153px;
+  background-image: url(../images/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 650px;
+}
+header .hero {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+header .hero__title {
+  max-width: 500px;
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+}
+header .hero__description {
+  position: absolute;
+  top: 154px;
+  left: -165px;
+  display: flex;
+  align-items: center;
+  justify-content: default;
+  flex-direction: default;
+  column-gap: 40px;
+}
+header .hero__description-line {
+  display: inline-block;
+  min-width: 202.5px;
+  border: 15px solid #FCB72B;
+}
+header .hero__description-desc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+header .hero__description-desc--text {
+  max-width: 405px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+header .hero__description-desc--btn {
+  min-width: 180px;
+  padding: 14px 39px;
+  background-color: #FCB72B;
+  color: #FFFFFF;
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
 /*# sourceMappingURL=main.css.map */
